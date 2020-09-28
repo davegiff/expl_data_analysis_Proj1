@@ -11,5 +11,5 @@ power4<-power_lim3%>%mutate(GAP=as.numeric(Global_active_power),Date2=dmy(Date)+
 
 # create plot
 png(filename = "plot1.png",width = 480, height = 480)
-hist(power4$GAP,col="red",xlab = "Global Active Power (Kilowatts)")
+hist(power4$GAP,col="red",main=NULL,xlab = "Global Active Power (Kilowatts)")
 dev.off()
